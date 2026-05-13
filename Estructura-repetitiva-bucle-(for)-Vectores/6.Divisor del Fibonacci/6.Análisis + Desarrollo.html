@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Análisis + Desarrollo del Fibonacci</title>
+    <link rel="stylesheet" href="S.css">
+</head>
+<body>
+    <script type="module" src="./Desarrollo.js"></script>
+    <table border="2">
+        <thead>
+            <tr>
+                <th colspan="2">Desarrollo de la busqueda del valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Buscar primer Fibonacci con más de: </td>
+                <td>
+                    <input type="number" id="inputDivisores" min="1" placeholder="Escribír: 1000" style="width: auto;">
+                </td>
+            </tr>
+            <tr>
+                <td>Posición del valor de Fibonacci: </td>
+                <td>
+                    <input type="text" id="txtPosicion" disabled placeholder=" ">
+                </td>
+            </tr>
+            <tr>
+                <td>Número de Fibonacci: </td>
+                <td>
+                    <input type="text" id="txtFibonacci" disabled placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td>Divisores encontrados son: </td>
+                <td>
+                    <input type="text" id="txtTotalDivisores" disabled placeholder="">
+                </td>
+            </tr>
+                        <tr>
+                <td colspan="2" align="right">
+                    <button id="btnBuscar">Resultado</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de ventas wz</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#fdfdfd;
+        }
+        .contenedor{
+            width:450px;
+            margin:auto;
+            margin-top:40px;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+        h2{
+            text-align:center;
+        }
+        input{
+            width:95%;
+            padding:8px;
+            margin-top:10px;
+        }
+        button{
+            width:100%;
+            padding:10px;
+            margin-top:15px;
+            background:rgb(0, 255, 0);
+            color:white;
+            border:none;
+            border-radius:5px;
+        }
+        #resultado{
+            margin-top:20px;
+            background:#8988e0;
+            padding:10px;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+        <p>
+            wz creator
+        </p>
+    <div class="contenedor">
+        <h2>Ventas total del local  </h2>
+        <p>
+            Ingrese las ventas de los 15 dias separadas por comas por favor
+        </p>
+        <input type="text" id="ventas"
+        placeholder="10,20,30,40...">
+        <button onclick="calcular()">
+            Calcular ventas de los 15 dias 
+        </button>
+        <div id="resultado"></div>
+    </div>
+    <script>
+        function calcular(){
+            let ventasTexto = document.getElementById("ventas").value;
+            let listaVentas = ventasTexto.split(",");
+            if(listaVentas.length != 15){
+                alert("Debes ingresar las 15 ventas");
+                return;
+            }
+            let ventaMayor = parseFloat(listaVentas[0]);
+            let ventaMenor = parseFloat(listaVentas[0]);
+            let diaVentaMayor = 1;
+            let diaVentaMenor = 1;
+            for(let i = 0; i < listaVentas.length; i++){
+                listaVentas[i] = parseFloat(listaVentas[i]);
+                if(listaVentas[i] > ventaMayor){
+                    ventaMayor = listaVentas[i];
+                    diaVentaMayor = i + 1;
+                }
+                if(listaVentas[i] < ventaMenor){
+                    ventaMenor = listaVentas[i];
+                    diaVentaMenor = i + 1;
+                }
+            }
+            document.getElementById("resultado").innerHTML =
+            "<h3>Resultados</h3>" +
+            "<p>La venta mas alta fue $" + ventaMayor +
+            " y ocurrió en el dia " + diaVentaMayor + "</p>" +
+            "<p>La venta mas baja fue $" + ventaMenor +
+            " y ocurrió en el dia " + diaVentaMenor + "</p>";
+        }
+    </script>
+</body>
+</html>

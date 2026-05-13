@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio de calificaciones</title>
+</head>
+<body>
+
+    <h1>Promedio de calificaciones</h1>
+    
+    <button onclick="procesarNotas()">Ingresar Notas</button>
+
+    <br><br>
+
+    <table border="1" style="background-color: powderblue;">
+        <thead>
+            <tr>
+                <th>Estudiante</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody id="tablaNotas">
+            </tbody>
+    </table>
+
+    <br>
+
+    <div id="resultados">
+        <p>Promedio General: <span id="prom"></span></p>
+        <p>Aprobados (>= 7): <span id="aprob"></span></p>
+        <p>Reprobados: <span id="reprob"></span></p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

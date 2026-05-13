@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio de Temperaturas</title>
+</head>
+<body>
+
+    <h2>Temperaturas en Manta</h2>
+
+    Día 1: <input type="number" id="t1"><br>
+    Día 2: <input type="number" id="t2"><br>
+    Día 3: <input type="number" id="t3"><br>
+    Día 4: <input type="number" id="t4"><br>
+    Día 5: <input type="number" id="t5"><br>
+    Día 6: <input type="number" id="t6"><br>
+    Día 7: <input type="number" id="t7"><br><br>
+
+    <button onclick="hacerCalculos()">Calcular Todo</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function hacerCalculos() {
+            // Guardamos cada temperatura en una variable sencilla
+            // Usamos el símbolo + antes de "document" para que JS sepa que es un número
+            let dia1 = +document.getElementById("t1").value;
+            let dia2 = +document.getElementById("t2").value;
+            let dia3 = +document.getElementById("t3").value;
+            let dia4 = +document.getElementById("t4").value;
+            let dia5 = +document.getElementById("t5").value;
+            let dia6 = +document.getElementById("t6").value;
+            let dia7 = +document.getElementById("t7").value;
+
+            // Creamos la lista (vector) con esas variables
+            let lista = [dia1, dia2, dia3, dia4, dia5, dia6, dia7];
+
+            // Sumamos todo a mano para no confundirnos
+            let sumaTotal = dia1 + dia2 + dia3 + dia4 + dia5 + dia6 + dia7;
+            let promedio = sumaTotal / 7;
+
+            // Empezamos a armar el resultado
+            let resultadoFinal = "El promedio es: " + promedio + "<br>";
+            resultadoFinal = resultadoFinal + "Días que superaron el promedio:<br>";
+
+            // Usamos el for para revisar la lista
+            for (let i = 0; i < 7; i = i + 1) {
+                if (lista[i] > promedio) {
+                    resultadoFinal = resultadoFinal + "Día " + (i + 1) + " con " + lista[i] + " grados.<br>";
+                }
+            }
+
+            document.getElementById("mensaje").innerHTML = resultadoFinal;
+        }
+    </script>
+
+</body>
+</html>

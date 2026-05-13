@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banco Mi Futuro</title>
+</head>
+<body>
+
+    <h2>Paso 1: Registrar Saldos de los 10 Clientes</h2>
+    <p>Ingrese el saldo para cada cuenta:</p>
+    
+    <!-- Creamos los 10 cuadros para los saldos -->
+    Cuenta 0: <input type="number" id="s0"> 
+    Cuenta 1: <input type="number" id="s1"><br>
+    Cuenta 2: <input type="number" id="s2"> 
+    Cuenta 3: <input type="number" id="s3"><br>
+    Cuenta 4: <input type="number" id="s4"> 
+    Cuenta 5: <input type="number" id="s5"><br>
+    Cuenta 6: <input type="number" id="s6"> 
+    Cuenta 7: <input type="number" id="s7"><br>
+    Cuenta 8: <input type="number" id="s8"> 
+    Cuenta 9: <input type="number" id="s9"><br><br>
+
+    <button onclick="guardarSaldos()">Guardar Todos los Saldos</button>
+
+    <hr>
+
+    <h2>Paso 2: Consultar Cuenta</h2>
+    <p>Número de cuenta a buscar (0-9):</p>
+    <input type="number" id="buscarCuenta">
+    <button onclick="consultar()">Ver Saldo</button>
+
+    <h3 id="pantalla"></h3>
+
+    <script>
+        // Creamos el vector vacío para llenarlo después
+        let vectorSaldos = [];
+
+        function guardarSaldos() {
+            // Usamos un for para sacar los datos de los 10 cuadros
+            for (let i = 0; i < 10; i = i + 1) {
+                let valor = +document.getElementById("s" + i).value;
+                vectorSaldos[i] = valor;
+            }
+            alert("Saldos guardados correctamente");
+        }
+
+        function consultar() {
+            let cuenta = +document.getElementById("buscarCuenta").value;
+            let mensaje = "Error: La cuenta no está registrada.";
+
+            // Revisamos si el número de cuenta existe en nuestro rango de 10
+            for (let i = 0; i < 10; i = i + 1) {
+                if (cuenta == i) {
+                    mensaje = "El saldo de la cuenta " + i + " es: $" + vectorSaldos[i];
+                }
+            }
+
+            document.getElementById("pantalla").innerHTML = mensaje;
+        }
+    </script>
+
+</body>
+</html>
