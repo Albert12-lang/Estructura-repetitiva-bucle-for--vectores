@@ -1,0 +1,9 @@
+Semper Ordóñez Ismael Jared.
+Promedio de calificaciones 
+
+¿Qué se hizo?
+Se desarrolló un programa que recibe las notas de 12 estudiantes, calcula el promedio general del curso y determina cuántos aprobaron y cuántos reprobaron y mostrándolo en pantalla 
+¿Cómo funciona?
+Las notas se guardan en vectores de 12 posiciones. Luego se recorre eso para sumar todos los valores y se divide entre 12 para obtener el promedio. Para contar aprobados y reprobados se revisa cada nota: si es mayor o igual a 7 se cuenta como aprobado, si no, como reprobado. Al final se muestran los tres resultados: promedio, aprobados y reprobados.
+resultado
+El programa muestra el promedio general con dos decimales, el número de estudiantes que aprobaron y el número de estudiantes que reprobaron, junto con el estado individual de cada uno.

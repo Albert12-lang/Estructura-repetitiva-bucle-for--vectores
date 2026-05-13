@@ -1,0 +1,5 @@
+Alavera Mejía Wellington Zinedine.
+
+Análisis de ventas de un local comercial.
+
+Este ejercicio estuvo complicado a full no entendía nada ni como hacer el cambio de color en visual me ayudo este video COLOR TAMAÑO y TIPOS de LETRA en HTML ACTUALIZADO | VISUAL STUDIO CODE 🍀, es bien complicado poner los códigos exactos fallo tras fallo pude pero necesite ayuda externa poco a poco puede ser que mejore en los documentos y los programas lo hago en HTML por dos razones entendí mas los otros lenguajes se me hacen complejos ay diferentes cambios de color en las líneas 9,15,18,32,33,39 en esos están colores para cambiar al gusto yo en el programa tengo puesto de fondo un color apagado y el de iniciar el programa en verde para contrastar este programa con ayuda y todo me demore 4 días y medio culmine y le puse mi marca personal de wz al inicio lado izquierdo superior gracias por su atención.

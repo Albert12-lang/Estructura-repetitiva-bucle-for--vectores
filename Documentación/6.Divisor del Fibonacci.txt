@@ -1,0 +1,20 @@
+Landivar López Francisco Alberto.
+
+Divisor del Fibonacci > 1000
+
+Dividimos el Html, el Css, y el Js.
+
+Html.- Este código HTML crea una interfaz sencilla para buscar un número de Fibonacci con cierta cantidad de divisores.
+Incluye un campo donde el usuario ingresa el límite de divisores que desea analizar.
+También tiene espacios para mostrar la posición, el número de Fibonacci y la cantidad de divisores encontrados.
+El botón “Resultado” permite ejecutar el cálculo usando un archivo JavaScript externo.
+En general, funciona como la parte visual del programa donde el usuario interactúa con el sistema.
+
+Css.- En css le dí color a la tabla y el tipo de letra.
+
+Js.- Este programa en JavaScript permite al usuario ingresar un número para buscar un término de la serie de Fibonacci que tenga más divisores que ese valor.
+Primero obtiene los datos desde el HTML y valida que el número ingresado sea correcto.
+Luego genera números de Fibonacci de forma iterativa mientras calcula la cantidad de divisores de cada uno.
+Cuando encuentra un número que supera el límite de divisores, muestra su posición, valor y total de divisores.
+Si no encuentra ninguno dentro del rango establecido, muestra un mensaje indicando que no hubo resultado.
+

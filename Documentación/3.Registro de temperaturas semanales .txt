@@ -1,0 +1,12 @@
+Ocampo Rivera Christofer Alexis.
+
+Registro de temperaturas semanales
+
+Resumen de cómo funciona el código
+•	Variables (dia1, dia2...): Son nombres que guardan cada temperatura que escribes en los cuadros.
+•	El signo (+): Sirve para que la computadora entienda que vas a usar números y no palabras.
+•	Vector (lista): Es un grupo de datos que guarda todas las temperaturas juntas en una sola fila.
+•	Suma y Promedio: El programa suma todos los números y los divide para 7 para sacar el punto medio.
+•	Ciclo FOR: Es una función que revisa automáticamente toda la lista, una por una, de principio a fin.
+•	Condición (if): Es una pregunta que separa los días normales de los días que fueron más calurosos que el promedio.
+•	innerHTML: Es la orden que se usa para que el resultado final aparezca escrito en la página de internet.

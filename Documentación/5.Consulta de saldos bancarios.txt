@@ -1,0 +1,12 @@
+Ocampo Rivera Christofer Alexis.
+
+Consulta de saldos bancarios.
+
+Resumen de cómo funciona el código del banco
+•	vectorSaldos: Es una lista vacía que sirve como "archivador" para guardar el dinero de los 10 clientes.
+•	Ciclo FOR (en guardar): Se encarga de pasar por los 10 cuadros de texto para recoger los saldos y guardarlos en orden.
+•	El signo (+): Convierte lo que escribes en los cuadros en números reales para que el banco pueda procesarlos.
+•	Variable cuenta: Guarda el número de posición (del 0 al 9) que el cajero quiere revisar., trata a los clientes los pocos de 0 al 9 con numero cualquiera y ejemplo cualquiera xd, no usa nombre solo numero y ingresa valor
+•	Variable mensaje: Es un texto que por defecto dice "Error", y solo cambia si encontramos la cuenta.
+•	Condición (if): Compara el número de cuenta que buscas con las posiciones que existen en la lista.
+•	innerHTML: Es la instrucción que hace que el saldo final o el error aparezcan escritos en la pantalla.

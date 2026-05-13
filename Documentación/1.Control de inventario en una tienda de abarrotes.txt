@@ -1,0 +1,15 @@
+Gualpa Gonzalez Jhon Jairo.
+
+Documentación control de inventario
+
+Introducción
+Este programa está diseñado para gestionar el control de inventario en una tienda de abarrotes sencilla. Utiliza HTML para la interfaz de usuario y JavaScript para la lógica de procesamiento. El objetivo principal es permitir al usuario ingresar los precios de varios productos, almacenarlos en un vector y calcular el valor total del inventario.
+Funcionamiento
+El programa consta de dos archivos principales: index.html y script.js.
+•	En index.html se crea la estructura visual con campos de entrada para los precios de los productos y un botón para ejecutar el cálculo.
+•	En script.js se define la función ‘calcularInventario()’, que realiza las siguientes tareas:
+1.	Crea un vector vacío para almacenar los precios.
+2.	Usa un bucle para recorrer cada campo de entrada y guardar los precios en el vector.
+3.	Muestra los precios ingresados concatenándolos en un texto.
+4.	Calcula la suma total de los precios usando otro bucle.
+5.	Muestra el resultado final en la página web.
