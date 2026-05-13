@@ -21,8 +21,8 @@ Ejercicio 6: Análisis + Desarrollo (Landivar López Francisco Alberto).
 
 
 ## Autores:
-Alavera Mejía Wellington Zinedine.
-Gualpa Gonzalez Jhon Jairo.
-Landivar López Francisco Alberto.
-Semper Ordóñez Ismael Jared.
-Ocampo Rivera Christofer Alexis.
+1. Alavera Mejía Wellington Zinedine.
+2. Gualpa Gonzalez Jhon Jairo.
+3. Landivar López Francisco Alberto.
+4. Semper Ordóñez Ismael Jared.
+5. Ocampo Rivera Christofer Alexis.
